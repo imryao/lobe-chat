@@ -14,7 +14,7 @@
     "502": "Sorry, the server seems to be lost and is temporarily unable to provide service. Please try again later.",
     "503": "Sorry, the server is currently unable to process your request, possibly due to overload or maintenance. Please try again later.",
     "504": "Sorry, the server did not receive a response from the upstream server. Please try again later.",
-    "InvalidAccessCode": "The password is incorrect or empty. Please enter the correct access password or add a custom OpenAI API Key.",
+    "InvalidAccessCode": "Please enter an ETOChat API Key. Get your key at https://ai.cs.ac.cn/dashboard",
     "OpenAIBizError": "Error requesting OpenAI service. Please troubleshoot or retry based on the following information.",
     "PluginMarketIndexNotFound": "Sorry, the server could not find the plugin index. Please check if the index address is correct",
     "PluginMarketIndexInvalid": "Sorry, the plugin index validation failed. Please check if the index file format is correct",
@@ -36,8 +36,8 @@
   },
   "unlock": {
     "apikey": {
-      "title": "Use Custom API Key",
-      "description": "Enter your OpenAI API Key to start the conversation. The application will not record your API Key.",
+      "title": "Use ETOChat API Key",
+      "description": "Enter your ETOChat API Key to start the conversation. The application will not record your API Key.",
       "addProxyUrl": "Add OpenAI Proxy URL (optional)"
     },
     "confirm": "Confirm and Retry",

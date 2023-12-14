@@ -16,7 +16,7 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { ABOUT, CHANGELOG, DISCORD, FEEDBACK, GITHUB, WIKI } from '@/const/url';
+import { ABOUT, CHANGELOG, FEEDBACK, GITHUB, WEIXIN, WIKI } from '@/const/url';
 import DataImporter from '@/features/DataImporter';
 import { configService } from '@/services/config';
 import { GlobalStore, useGlobalStore } from '@/store/global';
@@ -127,9 +127,9 @@ const BottomActions = memo<BottomActionProps>(({ tab, setTab }) => {
     <>
       <ActionIcon
         icon={DiscordIcon}
-        onClick={() => window.open(DISCORD, '__blank')}
+        onClick={() => window.open(WEIXIN, '__blank')}
         placement={'right'}
-        title={'Discord'}
+        title={'Weixin'}
       />
       <ActionIcon
         icon={Github}

@@ -11,9 +11,11 @@ export const GITHUB = pkg.homepage;
 export const CHANGELOG = urlJoin(GITHUB, 'blob/master/CHANGELOG.md');
 export const WIKI = urlJoin(GITHUB, 'wiki');
 export const WIKI_PLUGIN_GUIDE = urlJoin(WIKI, 'Plugin-Development');
-export const ABOUT = pkg.homepage;
+export const ABOUT =
+  'https://mp.weixin.qq.com/s?__biz=Mzg3NTU5NDYzMA==&mid=2247483654&idx=1&sn=f0ce245431f2baf228280dfacb096234&chksm=cf3e57eff849def99ca01d2782cc285420b4171757e4247b9781dc7206585f72d8b9bc1435f9#rd';
 export const FEEDBACK = pkg.bugs.url;
-export const DISCORD = 'https://discord.gg/AYFPHvv2jT';
+export const WEIXIN =
+  'https://mp.weixin.qq.com/s?__biz=Mzg3NTU5NDYzMA==&mid=2247483654&idx=1&sn=f0ce245431f2baf228280dfacb096234&chksm=cf3e57eff849def99ca01d2782cc285420b4171757e4247b9781dc7206585f72d8b9bc1435f9#rd';
 
 export const { PLUGINS_INDEX_URL, AGENTS_INDEX_URL } = getClientConfig();
 

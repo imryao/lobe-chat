@@ -7,7 +7,6 @@ import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import DataImporter from '@/features/DataImporter';
 import { useSessionStore } from '@/store/session';
 
 import Hero from './Hero';
@@ -16,8 +15,7 @@ import { useStyles } from './style';
 const Banner = memo<{ mobile?: boolean }>(({ mobile }) => {
   const { t } = useTranslation('welcome');
   const { styles } = useStyles();
-  const [switchSession, switchBackToChat, router, isMobile] = useSessionStore((s) => [
-    s.switchSession,
+  const [switchBackToChat, router, isMobile] = useSessionStore((s) => [
     s.switchBackToChat,
     s.router,
     s.isMobile,
@@ -35,15 +33,6 @@ const Banner = memo<{ mobile?: boolean }>(({ mobile }) => {
         justify={'center'}
         width={'100%'}
       >
-        <DataImporter
-          onFinishImport={() => {
-            switchSession();
-          }}
-        >
-          <Button block={mobile} size={'large'}>
-            {t('button.import')}
-          </Button>
-        </DataImporter>
         <Button
           block={mobile}
           onClick={() => (isMobile ? router?.push('/chat') : switchBackToChat())}

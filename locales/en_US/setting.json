@@ -66,8 +66,8 @@
       },
       "title": "OpenAI Settings",
       "token": {
-        "desc": "Use your own OpenAI key",
-        "placeholder": "OpenAI API Key",
+        "desc": "Use your own ETOChat API Key",
+        "placeholder": "ETOChat API Key",
         "title": "API Key"
       },
       "useAzure": {

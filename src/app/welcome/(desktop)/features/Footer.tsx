@@ -6,7 +6,7 @@ import { Book, Github } from 'lucide-react';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-import { DISCORD, GITHUB, WIKI } from '@/const/url';
+import { GITHUB, WEIXIN, WIKI } from '@/const/url';
 
 const Footer = memo(() => {
   const theme = useTheme();
@@ -19,7 +19,7 @@ const Footer = memo(() => {
       <Flexbox horizontal>
         <ActionIcon
           icon={DiscordIcon}
-          onClick={() => window.open(DISCORD, '__blank')}
+          onClick={() => window.open(WEIXIN, '__blank')}
           size={'site'}
           title={'Discord'}
         />
